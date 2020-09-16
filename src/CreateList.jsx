@@ -8,25 +8,25 @@ const CreateList=()=>{
     const [list,setList]=useState([]);
 
     const onInputTyped=(e)=>{
-             let name=e.target.name;
+            let name=e.target.name;
             let value=e.target.value;
-        return(
-            setTitle((pre)=>{
-                
+            setTitle((pre)=>{    
                 return(
-            
                     {
                         ...pre,
                         [name]:value
                     }
                 );
             })
-        );
     }
     
     const onButtonClicked=()=>
     {
-        console.log(title);
+        setList((pre)=>{
+            return(
+                [...pre,title]
+            );
+        });
     }
 
     return(
