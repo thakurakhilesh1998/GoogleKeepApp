@@ -17,18 +17,26 @@ function App() {
         });    
 }
 
+const onDelete=(id)=>{
+
+  setList((preVal)=>{
+   return preVal.filter((val,index)=>{
+      return index!==id;
+    })
+  });
+}
+
   return (
     <>
       <Header></Header>
       <CreateList onClick={onCreateNote}/>
-
+      <div className="list-container">
       {
-        
         list.map((val,index)=>{
-        return <KeepList id={index} key={index} title={val.title} msg={val.msg}/>
+        return <KeepList id={index} key={index} title={val.title} msg={val.msg} onDel={onDelete}/>
       })
-      
       }
+      </div>
       <Footer></Footer>
     </>
   );

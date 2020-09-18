@@ -8,13 +8,15 @@ const KeepList=(props)=>{
     return(
 
         <>
-            <Card className="list">
-                <CardContent className="card-content">
+            <div className="list">
+                <div className="card-content">
                     <h3>{props.title}</h3>
                     <p> {props.msg}</p>
-                </CardContent>
-                    <button className="del-btn"><DeleteForeverIcon/></button>
-            </Card>
+                </div>
+                    <button className="del-btn" onClick={()=>{
+                        props.onDel(props.id);
+                    }}><DeleteForeverIcon/></button>
+            </div>
         </>
     );
 }

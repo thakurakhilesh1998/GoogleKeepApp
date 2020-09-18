@@ -1,11 +1,13 @@
 
 .list
 {
+    display: block;
     margin: 5rem 1rem 1rem 1rem;
     width: 150px;
+    padding: 0.4rem;
     display: block;
-    background-color:#f5ba16!important;
-    color: white!important;
+    background-color:#f5ba16;
+    color: white;
     font-family: sans-serif;
     box-sizing: border-box;
 }
