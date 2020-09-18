@@ -15,7 +15,7 @@ const KeepList=(props)=>{
                 </div>
                     <button className="del-btn" onClick={()=>{
                         props.onDel(props.id);
-                    }}><DeleteForeverIcon/></button>
+                    }}><DeleteForeverIcon id="icon"/></button>
             </div>
         </>
     );

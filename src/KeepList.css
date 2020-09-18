@@ -3,23 +3,28 @@
 {
     display: block;
     margin: 5rem 1rem 1rem 1rem;
-    width: 150px;
+    width: 200px;
     padding: 0.4rem;
     display: block;
     background-color:#f5ba16;
     color: white;
     font-family: sans-serif;
-    box-sizing: border-box;
+    border-radius: 0.4rem;
+    -webkit-box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.1);  
+    -moz-box-shadow:    2px 2px 2px 3px rgba(0, 0, 0, 0.1);  
+    box-shadow:         3px 3px 3px 3px rgba(0, 0, 0, 0.1);  
+    /* //horzontal offset vertical offset blur ratio spread ration color */
 }
 
 .del-btn
 {
     display: block;
-    margin: auto auto;
+    float: right;
     border-radius: 50%;
-    padding: 0.4rem;
+    padding: 0.2rem;
     color: white;
     border: none;
+    margin: 0.2rem 0.2rem 0 0;
     background-color: red;
 
 }
@@ -31,4 +36,9 @@
     padding: 0.2rem;
     font-size: 0.8rem;
     text-align: justify;
+}
+
+#icon
+{
+    font-size: 1.2rem;
 }
