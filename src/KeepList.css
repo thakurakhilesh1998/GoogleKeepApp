@@ -1,8 +1,32 @@
+
 .list
 {
-    padding: 1rem;
+    margin: 5rem 1rem 1rem 1rem;
     width: 150px;
-    height: 120px;
-    display: flex;
-    flex-direction: column;
+    display: block;
+    background-color:#f5ba16!important;
+    color: white!important;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.del-btn
+{
+    display: block;
+    margin: auto auto;
+    border-radius: 50%;
+    padding: 0.4rem;
+    color: white;
+    border: none;
+    background-color: red;
+
+}
+
+.del-btn:focus{
+    outline: none;
+}
+.card-content p{
+    padding: 0.2rem;
+    font-size: 0.8rem;
+    text-align: justify;
 }
